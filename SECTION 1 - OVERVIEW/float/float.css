@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    padding: 10px;
+    background: -webkit-linear-gradient(top, blanchedalmond,rgb(182, 168, 89),blanchedalmond);
+}
+.header {
+  
+    color: chartreuse;
+    padding: 20px;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 4px 4px 6px red ;
+  }
+
+.leftc{
+    float:left;
+    width:25%;
+    height:500px;
+    background-image: url("lion.png");
+    background-size: 200px 200px;
+    background-position:50% 50% ;
+    background-repeat: no-repeat;
+}
+.eat{
+    padding: 10px;
+    width: max-content;
+    text-align: center;
+    border: 2px groove red;
+    background-color: chartreuse;
+    border-radius: 15px;
+}
+.middlec{
+    background-color: red;
+    float:left;
+    width:50%;
+    height:800px;
+    text-align: center;
+    font-style: italic;
+    color: aqua;
+    border-radius: 40px;
+    border: 5px ridge chartreuse;
+}
+.rightc{
+    float:left;
+    width:25%;
+    height:500px;
+    background-image: url("zebra.png");
+    background-size: 200px 200px;
+    background-position:50% 50% ;
+    background-repeat: no-repeat;
+}
+.food{
+    padding: 10px;
+    width: max-content;
+    text-align: center;
+    border: 2px groove red;
+    background-color:chartreuse;
+    border-radius:15px ;
+}
+.beast:after {
+    content: "";
+    display: table;
+    margin-bottom: 50px;
+    clear: both;
+  }
+  
+ 
+  @media (max-width: 500px) {
+    .leftc, .middlec, .rightc, .eat, .food{
+      width: 100%;
+
+    }
+}
+  
+@media (max-width: 950px) {
+    .leftc, .eat, .middlec, .rightc, .food {
+      width: 100%;
+    }
+  }/*
+  @media (max-width: 1200px) {
+    .leftc, .eat, .middlec, .rightc, .food {
+      width: 100%;
+    }
+  }*/

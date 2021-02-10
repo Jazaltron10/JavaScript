@@ -1,0 +1,92 @@
+/*body{
+    background-color: blueviolet;
+}*/
+
+* {
+    box-sizing: border-box;
+  }
+
+
+
+#john{
+    margin: 50px;
+    
+    background-image: url("eagle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border: 2px groove yellow;
+    border-radius: 50px;
+    background-color: chartreuse;
+    color: red;
+}
+.change{
+    float:left;
+    width:100px;
+    height:50px;
+    text-decoration: none;
+    padding: 15px;
+    border:none;
+    margin-bottom: 10px;
+    background-color:turquoise;
+    color:black;
+    font-family: cursive;
+    border-radius: 20px;
+    text-decoration: none;
+    border:3px ridge gold;
+}
+
+div{
+    font-family: cursive;
+    padding: 140px;
+    text-decoration: none;
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    margin-bottom:10px ;
+    color: white;
+    border-radius: 20px;
+}
+.changeagain{
+    float:left;
+    width:100px;
+    height:50px;
+    text-decoration: none;
+    padding: 15px;
+    border:none;
+    border-radius: 20px;
+    background-color: turquoise;
+    color:black;
+    font-family: cursive;
+    text-decoration: none;
+    border:3px groove gold;
+}
+section:after {
+    content: " ";
+    display: table;
+    margin-bottom: 50px;
+    clear: both;
+  }
+
+  @media (max-width: 500px) {
+   .change, div,.changeagain{
+      width: 100%;
+     }
+     #john{
+         width: 100px;
+         height: 100px;
+         border-radius: 50px;
+    }
+    #btn,#myimg{
+        width: 60%;
+        margin-bottom: 10px;
+        }
+}
+  
+@media (max-width: 950px) {
+    .change, div,.changeagain {
+      width: 100%;
+    }
+  }
