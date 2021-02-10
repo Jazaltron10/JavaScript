@@ -1,0 +1,483 @@
+<<<<<<< HEAD
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+    color:yellow;
+}
+@font-face{
+    font-family: Sectar;
+    src:url("../FONTS/sectar-font/Sectar-GOqrO.otf");
+}
+.header {
+    font-family: Sectar;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 4px 4px 6px lime;
+  }
+
+.dropdown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin:auto;
+}  
+.Dark-Knight,.Red-Death,
+.Devastator,.Merciless,
+.Drowned,.Batrigan,.Murder-Machine{
+    position: relative;
+}
+
+.Dark-Knight ul, .Red-Death ul,
+.Devastator ul, .Merciless ul,
+.Drowned ul, .Batrigan ul, .Murder-Machine ul{
+position: absolute;
+background: rgba(156, 152, 152, 0.4);
+margin-top: 10px;
+padding-left: 0px;
+width: 200px;
+height: 200px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+list-style: none;
+border-radius: 10px;
+opacity: 0;
+pointer-events:none ;
+transform: translateY(-10px);
+transition: all 0.4s ease ;
+}
+
+.Dark-Knight a,.Red-Death a,
+.Devastator a,.Merciless a,
+.Drowned a,.Batrigan a,.Murder-Machine a{
+   color: black;
+   text-decoration: none;
+}
+
+.Dark-Knight li,.Red-Death li,
+.Devastator li,.Merciless li,
+.Drowned li,.Batrigan li,.Murder-Machine li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dark-Knight li:hover,.Red-Death li:hover,
+.Devastator li:hover,.Merciless li:hover,
+.Drowned li:hover,.Batrigan li:hover,.Murder-Machine li:hover{
+    background-color: chartreuse;
+}
+.dropdown button{
+    background: none;
+    border:none;
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.dropdown button:hover{
+    color: rgb(187, 176, 176);
+}
+
+.Dark-Knight button:focus + ul,
+.Red-Death button:focus + ul,
+.Devastator button:focus + ul,
+.Merciless button:focus + ul,
+.Drowned button:focus + ul,
+.Batrigan button:focus + ul,
+.Murder-Machine button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+/* .Dark-Knight button ul:focus + li,
+.Red-Death button ul:focus + li,
+.Devastator button ul:focus + li,
+.Merciless button ul:focus + li,
+.Drowned button ul:focus + li,
+.Batrigan button ul:focus + li,
+.Murder-Machine button ul:focus + li{
+    
+    pointer-events: all;
+    
+} */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .Dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+.Dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .Dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+
+
+
+
+.div_1{
+    font-family: Sectar;
+    margin:0 5px;
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    line-height: 400px;
+    float:left;
+    height: 400px;
+    width:  24.3%;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+}
+
+.div_2{
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    background-image: url("laugh.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float:left;
+    height: 700px;
+    width:  50%;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+    color: rgb(231, 37, 37,0.7);
+    text-align: left;
+    padding: 10px;
+    font-family: Sectar;
+    font-size: small;
+    top:15px ;
+}
+.aside{
+    margin:0 5px;
+    float: left;
+    width: 24.3%;
+    }
+
+.div_3a{
+    font-family: Sectar;
+    line-height: 400px;
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    height: 400px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+}
+.div_3b{
+    padding:5px;
+    margin: 5px 0;
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    height: 350px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+    overflow: scroll;
+}
+
+.section-1::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer{
+        padding: 50px 0;
+        min-width: 400px; 
+        background-color: rgb(255, 255, 255,0.3);
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: 3px groove rgba(221, 42, 11, 0.8);
+        text-decoration:none;
+     
+}
+
+
+@media (max-width:300px){
+    .div_1,.div_2,.aside,.header,footer{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 7px;
+    }
+    
+} 
+ 
+
+@media (max-width: 800px) {
+    .div_1,.div_2,.aside,.header,footer{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 7px;
+    }
+
+
+}
+=======
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+    color:yellow;
+}
+@font-face{
+    font-family: Sectar;
+    src:url("../FONTS/sectar-font/Sectar-GOqrO.otf");
+}
+.header {
+    font-family: Sectar;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 4px 4px 6px lime;
+  }
+
+.dropdown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin:auto;
+}  
+.Dark-Knight,.Red-Death,
+.Devastator,.Merciless,
+.Drowned,.Batrigan,.Murder-Machine{
+    position: relative;
+}
+
+.Dark-Knight ul, .Red-Death ul,
+.Devastator ul, .Merciless ul,
+.Drowned ul, .Batrigan ul, .Murder-Machine ul{
+position: absolute;
+background: rgba(156, 152, 152, 0.4);
+margin-top: 10px;
+padding-left: 0px;
+width: 200px;
+height: 200px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+list-style: none;
+border-radius: 10px;
+opacity: 0;
+pointer-events:none ;
+transform: translateY(-10px);
+transition: all 0.4s ease ;
+}
+
+.Dark-Knight a,.Red-Death a,
+.Devastator a,.Merciless a,
+.Drowned a,.Batrigan a,.Murder-Machine a{
+   color: black;
+   text-decoration: none;
+}
+
+.Dark-Knight li,.Red-Death li,
+.Devastator li,.Merciless li,
+.Drowned li,.Batrigan li,.Murder-Machine li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dark-Knight li:hover,.Red-Death li:hover,
+.Devastator li:hover,.Merciless li:hover,
+.Drowned li:hover,.Batrigan li:hover,.Murder-Machine li:hover{
+    background-color: chartreuse;
+}
+.dropdown button{
+    background: none;
+    border:none;
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.dropdown button:hover{
+    color: rgb(187, 176, 176);
+}
+
+.Dark-Knight button:focus + ul,
+.Red-Death button:focus + ul,
+.Devastator button:focus + ul,
+.Merciless button:focus + ul,
+.Drowned button:focus + ul,
+.Batrigan button:focus + ul,
+.Murder-Machine button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+/* .Dark-Knight button ul:focus + li,
+.Red-Death button ul:focus + li,
+.Devastator button ul:focus + li,
+.Merciless button ul:focus + li,
+.Drowned button ul:focus + li,
+.Batrigan button ul:focus + li,
+.Murder-Machine button ul:focus + li{
+    
+    pointer-events: all;
+    
+} */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .Dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+.Dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .Dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+
+
+
+
+.div_1{
+    font-family: Sectar;
+    margin:0 5px;
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    line-height: 400px;
+    float:left;
+    height: 400px;
+    width:  24.3%;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+}
+
+.div_2{
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    background-image: url("laugh.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float:left;
+    height: 700px;
+    width:  50%;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+    color: rgb(231, 37, 37,0.7);
+    text-align: left;
+    padding: 10px;
+    font-family: Sectar;
+    font-size: small;
+    top:15px ;
+}
+.aside{
+    margin:0 5px;
+    float: left;
+    width: 24.3%;
+    }
+
+.div_3a{
+    font-family: Sectar;
+    line-height: 400px;
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    height: 400px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+}
+.div_3b{
+    padding:5px;
+    margin: 5px 0;
+    border: 3px groove rgba(226, 230, 37, 0.829);
+    height: 350px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius:10px;
+    overflow: scroll;
+}
+
+.section-1::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer{
+        padding: 50px 0;
+        min-width: 400px; 
+        background-color: rgb(255, 255, 255,0.3);
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: 3px groove rgba(221, 42, 11, 0.8);
+        text-decoration:none;
+     
+}
+
+
+@media (max-width:300px){
+    .div_1,.div_2,.aside,.header,footer{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 7px;
+    }
+    
+} 
+ 
+
+@media (max-width: 800px) {
+    .div_1,.div_2,.aside,.header,footer{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 7px;
+    }
+
+
+}
+>>>>>>> b5e58b02dd9f44a22b8e3f61fec8cda1f20f25f0
