@@ -1,0 +1,22 @@
+*{box-sizing: border-box;}
+body{
+    background-color: lightgreen;
+}
+
+
+
+@media (max-width:500px){
+    img{
+        width: 360px;
+      height:180px;
+      }
+    .section-6 > div > img{
+      width: 360px;
+      height: 180px;
+    }
+    button{
+      text-decoration: none;
+      margin: 20px;
+      box-shadow:2px 4px 4px black;
+    }
+  }
